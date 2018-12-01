@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo_pianolittleponi"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_logo_piano"/>
+
+        <RelativeLayout
+            android:id="@+id/rlCahtegal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_next" />
+        </RelativeLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-5730449577374867/5786241667" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

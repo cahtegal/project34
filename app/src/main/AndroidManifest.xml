@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nextwin.piano.mini">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5730449577374867~5266656470"/>
+        <activity
+            android:name=".GameMain"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".TemaPony"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".TemaPiano"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+    </application>
+
+</manifest>
